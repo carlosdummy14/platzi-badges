@@ -8,4 +8,13 @@ import Badge from "./components/Badge";
 const container = document.getElementById("app");
 
 // ReactDOM.render( que queremos renderizar, donde lo vamos a renderizar)
-ReactDOM.render(<Badge />, container);
+ReactDOM.render(
+  <Badge
+    firstName="Ramón"
+    lastName="López"
+    avatarUrl="https://www.gravatar.com/avatar?d=identicon"
+    jobTitle="Kickass senior dev"
+    twitter="chilangomagic"
+  />,
+  container
+);
