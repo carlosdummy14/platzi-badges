@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import "./styles/BadgesList.css";
-import Gravatar from "./Gravatar";
+// import Gravatar from "./Gravatar";
+import BadgesListItem from "./BadgesListItem";
 
 class BadgesList extends React.Component {
   render() {
@@ -21,22 +22,13 @@ class BadgesList extends React.Component {
         <ul className="list-unstyled">
           {this.props.badges.map(badge => {
             return (
-              <li key={badge.id} className="BadgesListItem">
-                <div>
-                  <Gravatar
-                    email={badge.email}
-                    alt={`${badge.firstName} ${badge.lastName}`}
-                    className="BadgesListItem__avatar"
-                  />
-                </div>
-                <div>
-                  <strong>
-                    {badge.firstName} {badge.lastName}
-                  </strong>
-                  <br />@{badge.twitter}
-                  <br />
-                  {badge.jobTitle}
-                </div>
+              <li key={badge.id}>
+                <Link
+                  className="text-reset text-decoration-none"
+                  to={`/badges/${badge.id}/edit`}
+                >
+                  <BadgesListItem badge={badge} />
+                </Link>
               </li>
             );
           })}
