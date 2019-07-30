@@ -11,7 +11,7 @@ import NotFound from "../pages/NotFound";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/platzi-badges">
       <Layout>
         <Switch>
           <Route exact path="/" component={Home} />

@@ -2,7 +2,7 @@
   "name": "platzi-badges",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://carlosdummy14.github.io/platzi-badges"
+  "homepage": "https://carlosdummy14.github.io/platzi-badges",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "gh-pages": "^2.0.1",
     "md5": "^2.2.1",
     "react": "16.8.3",
     "react-dom": "16.8.3",
