@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/platzi-badges/static/css/2.d826f1f4.chunk.css"
   },
   {
-    "revision": "694a231e62f565768818ff8cb099e457",
+    "revision": "7ee48d4883ab134047c29c348bf4090b",
     "url": "/platzi-badges/index.html"
   }
 ];
